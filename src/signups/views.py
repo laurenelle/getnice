@@ -18,7 +18,7 @@ def home(request):
     save_it.save()
     # send_mail(subject, message, from_email, to_list, fail_silently=true)
     subject = 'Thanks for signing up for getnice'
-    message = 'Welcome to getnice'
+    message = 'Welcome to getnice \n :)'
     from_email = settings.EMAIL_HOST_USER
     to_list = [save_it.email, settings.EMAIL_HOST_USER]
     messages.success(request, 'Thank you for signing up!')
