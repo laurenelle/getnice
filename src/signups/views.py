@@ -36,3 +36,8 @@ def thankyou(request):
 def aboutus(request):
 
   return render_to_response("aboutus.html", locals(), context_instance=RequestContext(request))
+
+
+def index(request):
+
+  return render_to_response("index.html", locals(), context_instance=RequestContext(request))
